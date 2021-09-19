@@ -246,13 +246,13 @@ try {
   (function UsePropertyShorthand() {
     const name = "Oslo";
     const age = 985;
-    const norwegian = true;
+    const dutch = false;
 
     // Remove all unnecesary syntax to let the test pass.
     let city = {
-      name: name,
-      age: age,
-      dutch: !norwegian
+      name,
+      age,
+      dutch
     };
 
     // Don't make changes below this line
